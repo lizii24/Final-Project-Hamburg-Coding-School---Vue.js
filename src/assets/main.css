@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&family=Quicksand&family=Raleway:wght@200&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+header,
+main,
+footer {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 1.1rem;
+  background: radial-gradient(circle at 50% 0%, #6cafc3, #fff0),
+    radial-gradient(circle at 50% 100%, #6cafc3, #1a456e);
+}
+
+.bodyContentHolder {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+main {
+  flex-grow: 2;
+  align-self: flex-start;
+  padding: 0 2rem;
+}
+
+footer {
+  margin-top: 4rem;
+}
+
+/* --------------------TYPO----------------------- */
+
+p {
+  margin: 1rem 0;
+}
+
+h1,
+h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  color: #ffffff;
+  font-weight: 100;
+  margin-block: 0;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0 0 1rem 0;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin: 1rem 0 1rem 0;
+}
+
+.h1_card {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.link {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.linkTrans {
+  color: #ffffff;
+  opacity: 0.5;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.link::after,
+.linkTrans::after {
+  content: '';
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: #ffffff;
+  transition: 300ms;
+}
+
+.linkTrans:hover {
+  color: #ffffff;
+  opacity: 1;
+  transition: 300ms;
+}
+
+.link:hover::after,
+.linkTrans:hover::after {
+  width: 100%;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+/* ----------------- MAP -------------------- */
+
+.mapboxgl-popup-content h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.3rem;
+  color: #1a456e;
+  margin: 0;
+  padding-top: 0.5rem;
+}
+
+.mapboxgl-popup-content p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: small;
+  color: #1a456e;
+  margin: 0;
+  padding-top: 0.5rem;
+}
+
+.mapboxgl-popup-content a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: small;
+  color: #1a456e;
+  font-weight: bold;
+  margin: 0;
+}
+
+.mapboxgl-popup-content img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-left: 0.8rem;
+  position: relative;
+  top: 8px;
+}
+
+/* ----------------- RESIZE -------------------- */
+
+@media screen and (max-width: 800px) {
+  main {
+    padding: 0;
+  }
+}

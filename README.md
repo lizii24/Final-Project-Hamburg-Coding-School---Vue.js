@@ -49,5 +49,5 @@ $ npm start
 ```
 
 ## Acknowledgment  
-A big thanks to the instructors of the Hamburg Coding School and main mentor.  
+A big thanks to the instructors of the Hamburg Coding School.  
 <img src="https://github.com/hamburgcodingschool.png" width="60px;"/><br /><sub><a href="https://github.com/hamburgcodingschool">hamburgcodingschool</a></sub>
